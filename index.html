@@ -306,18 +306,21 @@
 
 					<!-- PROJECTS -->
 					<div class="header-1 pt-5 section-anchor" id="projects">Projects</div>
-					<div class="row shiksha">
-						<div class="col-md-2 my-auto">
-							<img class="sideimg" lsrc="images/sides/shiksha_copilot.png">
-						</div>
-						<div class="col-lg-10">
-							<p class="paper my-2 pl-2">
+					<div class="row align-items-start project-item shiksha">
+						<div class="col-12 col-md-8">
+							<p class="paper mt-2 mb-0 mb-md-1 project-body project-intro">
 								<span class="papertitle">
 									Shiksha Copilot
 								</span>
 								<br>
 								An educational assistant built to aid teachers in creating engaging content using Generative AI. Currently deployed in 30+ rural schools across Karnataka, India.
-								<br>
+							</p>
+						</div>
+						<div class="col-12 col-md-4 project-visual">
+							<img class="img-fluid project-cover" lsrc="images/sides/shiksha_copilot.png" alt="Shiksha Copilot preview">
+						</div>
+						<div class="col-12">
+							<p class="paper mt-3 mb-2 project-body project-details">
 								<b>Team: </b>Akshay Nambi, Tanuja Ganu, Kavyansh Chourasia, Srujana Oruganti, Krishna Prasad Srinivasan, Karan Kumar, <span class="thisauthor">Ishaan Watts</span>, Yash Gadhia, Somnath Sendhil Kumar, Meena S, Sanchit Gupta
 								<br>
 								<b>Collaborators: </b><a class="in-text" href="https://sikshana.org" target="_blank">Sikshana Foundation</a>
@@ -441,6 +444,54 @@
         width: 100%;
         max-width: 180px;
         border: 1px solid #ccc;
+    }
+
+    .project-item .project-visual {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-top: 0;
+        text-align: right;
+    }
+
+    .project-item .project-cover {
+        width: auto;
+        height: auto;
+        max-width: min(220px, 100%);
+        max-height: 150px;
+        object-fit: contain;
+        object-position: right center;
+        border: none;
+        display: block;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: 767.98px) {
+        .project-item .project-visual {
+            padding-top: 0.75rem;
+            justify-content: flex-end;
+        }
+
+        .project-item .project-cover {
+            max-height: min(140px, 38vw);
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .project-item.shiksha > .col-md-8 {
+            padding-right: 8px;
+        }
+
+        .project-item.shiksha > .col-md-4 {
+            padding-left: 8px;
+        }
+    }
+
+    .project-item .project-body {
+        padding-left: 0;
+        border-left: none;
+        text-align: left;
     }
     /* .in-text {
         font-weight: 400;
