@@ -21,10 +21,10 @@
 		
 		<!-- Primary Meta Tags -->
 		<meta name="title" content="Ishaan Watts | Pre-Doctoral Researcher @ Google DeepMind">
-		<meta name="description" content="Adressing linguistic barriers in LLMs to increase inclusivity and fairness in AI.">
+		<meta name="description" content="Addressing linguistic barriers in LLMs to increase inclusivity and fairness in AI.">
 		<meta name="robots" content="index, follow">
 
-		<!-- Google -->>
+		<!-- Google -->
 		<meta name="google-site-verification" content="N2iS0YhlmknKU71fCZ22sqLumulgrJUVXjkkNR7ek6A" />
 
 		<!-- Open Graph / Facebook -->
@@ -52,10 +52,26 @@
 		<!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet"> -->
 		<!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet"> -->
 		<title>Ishaan Watts</title>
+		<meta name="theme-color" content="#1a1d23" id="theme-color-meta">
+		<script>
+		(function(){try{var m=document.getElementById('theme-color-meta');var t=localStorage.getItem('theme');var dark=t!=='light';if(dark)document.documentElement.classList.add('theme-dark');if(m)m.setAttribute('content',dark?'#1a1d23':'#fbfbfb');}catch(e){document.documentElement.classList.add('theme-dark');var m=document.getElementById('theme-color-meta');if(m)m.setAttribute('content','#1a1d23');}})();
+		</script>
 	</head>
 	<body>
 		<div class="container pt-4 allstuffp">
-            
+			<nav class="section-nav" aria-label="Page sections">
+				<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+					<i class="fas fa-moon theme-toggle-icon" aria-hidden="true"></i>
+				</button>
+				<div class="section-nav-links">
+					<a class="section-nav-link" href="#about">About</a>
+					<a class="section-nav-link" href="#news">What's New</a>
+					<a class="section-nav-link" href="#publications">Publications</a>
+					<a class="section-nav-link" href="#projects">Projects</a>
+					<a class="section-nav-link" href="#affiliations">Affiliations</a>
+				</div>
+			</nav>
+
 			<div class="row pt-4 allstuff">
 				<div class="col-md-4 pt-5">
 					<div class="fixed-posi">
@@ -101,7 +117,7 @@
 
 
 				<div class="col-md-8 pt-5 about text-justify">
-					<div class="header-1 pt-5">About</div>
+					<div class="header-1 pt-5 section-anchor" id="about">About</div>
 					Hello! My name is Ishaan Watts, and I am a first-year graduate student in the Machine Learning Department at <a class="in-text" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
 					I am interested in the science of foundation models and understanding their failure modes.
 					Currently, I am working with <a class="in-text" href="https://www.cs.cmu.edu/~aditirag/" target="_blank">Prof. Aditi Raghunathan</a> on studying how pretraining choices influence downstream performance [<span class="conf-bio">ICML'26</span>][<i>Spotlight Talk</i> @ ICBINB Workshop, <span class="conf-bio">ICLR'26</span>].
@@ -128,7 +144,7 @@
 					Last Updated: 05/07/2026
 
 					<!-- NEWS -->
-					<div class="header-1 pt-5">What's New</div>
+					<div class="header-1 pt-5 section-anchor" id="news">What's New</div>
 					<div class="news-scroll">
 					<div class="news-item"><b> • May, 2026:</b> Our work "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting" has been accepted at <b>ICML 2026</b>. See you in Seoul 🇰🇷!</div>
 					<div class="news-item"><b> • April, 2026:</b> I have been invited to give a <i>Spotlight Talk</i> on our work, "Sharpness-Aware Pretraining Mitigates Catastrophic Forgetting", at the ICBINB Workshop @ ICLR 2026 in Rio de Janeiro, Brazil 🇧🇷.</div>
@@ -146,8 +162,8 @@
 					</div>
 					
 					<!-- PUBLICATIONS SECTION -->
-					<div class="header-1 pt-5">Publications</div>
-					<p align="left">C=Conference,  P=Preprint, <sup>*</sup>=Equal Contribution</p>
+					<div class="header-1 pt-5 section-anchor" id="publications">Publications</div>
+					<p class="text-left mb-2 pub-legend">C=Conference, P=Preprint, <sup>*</sup>=Equal Contribution</p>
 					<div class="row sharpness2026">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/ICLR2026%20Poster%20ICBINB%20-%20Ishaan%20Watts.png">
@@ -289,7 +305,7 @@
 					</div>
 
 					<!-- PROJECTS -->
-					<div class="header-1 pt-5">Projects</div>
+					<div class="header-1 pt-5 section-anchor" id="projects">Projects</div>
 					<div class="row shiksha">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/shiksha_copilot.png">
@@ -332,6 +348,7 @@
 						<br>
 					</div> -->
 
+					<div class="header-1 pt-5 section-anchor" id="affiliations">Affiliations</div>
 					<div class="row text-center py-5">
 						<div class="mx-auto mt-2">
 							<img class="img-fluid instilogo " lsrc="images/logos/iitd.svg.png">
@@ -370,9 +387,11 @@
 						</div>
 					</div>
 				</div>
-                <a class="menulink source-link" target="_blank" href="https://github.com/WattsIshaan/WattsIshaan.github.io">
-                    <i class="fa fa-external-link" aria-hidden="true"></i>
-                    Website source and acknowledgements</a>
+				<div class="col-12">
+					<a class="menulink source-link" target="_blank" href="https://github.com/WattsIshaan/WattsIshaan.github.io">
+						<i class="fa fa-external-link" aria-hidden="true"></i>
+						Website source and acknowledgements</a>
+				</div>
 			</div>
             
 		</div>
@@ -390,6 +409,14 @@
             src="//www.clustrmaps.com/map_v2.png?d=KniCFGECc_cT9UY5Lag-IHx_mfUn99sGIlKd81H1l1o&cl=ffffff" 
             style="display: none;"></a> -->
 		<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    html.theme-dark {
+        color-scheme: dark;
+    }
+
     body {
         /* font-family: 'Quicksand', sans-serif; */
         font-family: 'Roboto', sans-serif;
@@ -398,6 +425,7 @@
         /* font-size: 17px; */
         font-size: 0.9rem;
         background-color:#fbfbfb;
+        overflow-x: hidden;
         /* background-image: url('images/subtle-old.jpg');; */
         /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23ffe0cf' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
       }
@@ -455,6 +483,15 @@
     .about {
         font-size: 1rem;
         line-height: 1.65;
+        overflow-wrap: anywhere;
+        word-wrap: break-word;
+    }
+
+    .news-item,
+    .paper,
+    .pub-legend {
+        overflow-wrap: anywhere;
+        word-wrap: break-word;
     }
 
     .header-1 {
@@ -490,10 +527,180 @@
         margin: 0 auto;
     }
 
+    .section-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 16px;
+        padding: 10px 14px;
+        margin-bottom: 4px;
+        background: rgba(251, 251, 251, 0.97);
+        border: 1px solid #e4e8ef;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
+
+    .section-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 6px 16px;
+        margin-left: auto;
+    }
+
+    .theme-toggle {
+        flex-shrink: 0;
+        border: 1px solid #dce0e8;
+        background: #fff;
+        color: #002147;
+        border-radius: 6px;
+        padding: 7px 11px;
+        cursor: pointer;
+        line-height: 1;
+        font-size: 0.95rem;
+        transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .theme-toggle:hover {
+        color: #1f62cc;
+        border-color: #b8c9e8;
+        background: #f6f8fb;
+    }
+
+    .theme-toggle:focus {
+        outline: 2px solid #1f62cc;
+        outline-offset: 2px;
+    }
+
+    .section-nav-link {
+        color: #002147;
+        font-weight: 400;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    .section-nav-link:hover {
+        color: #1f62cc;
+    }
+
+    html.theme-dark body {
+        background-color: #1a1d23;
+        color: #e0e4ec;
+    }
+
+    html.theme-dark .name {
+        color: #f2f4f8;
+    }
+
+    html.theme-dark .header-1 {
+        color: #e8ecf4;
+    }
+
+    html.theme-dark .institution {
+        color: #c8ced9;
+    }
+
+    html.theme-dark .years {
+        color: #8f98a8;
+    }
+
+    html.theme-dark a {
+        color: #8ab4f8;
+    }
+
+    html.theme-dark a:hover {
+        color: #c4d9fc;
+    }
+
+    html.theme-dark .menulink {
+        color: #b3c7ff;
+    }
+
+    html.theme-dark .menulink:hover {
+        color: #d4e1ff;
+    }
+
+    html.theme-dark .menulink.source-link {
+        color: #9aaecb;
+    }
+
+    html.theme-dark .menulink.source-link:hover {
+        color: #c4d4ec;
+    }
+
+    html.theme-dark .thisauthor {
+        color: #8fd4a8;
+    }
+
+    html.theme-dark .conf-bio {
+        color: #e8a0a0;
+    }
+
+    html.theme-dark .news-scroll {
+        background-color: #23272f;
+        border-color: #3d4450;
+    }
+
+    html.theme-dark .news-item {
+        background-color: #2a2f39;
+        border-color: #3d4450;
+    }
+
+    html.theme-dark .section-nav {
+        background: rgba(26, 29, 35, 0.97);
+        border-color: #3d4450;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    }
+
+    html.theme-dark .section-nav-link {
+        color: #d4dbf0;
+    }
+
+    html.theme-dark .section-nav-link:hover {
+        color: #ffffff;
+    }
+
+    html.theme-dark .theme-toggle {
+        background: #2a2f39;
+        color: #e8ecf4;
+        border-color: #4a5260;
+    }
+
+    html.theme-dark .theme-toggle:hover {
+        background: #343a46;
+        color: #fff;
+        border-color: #6b7585;
+    }
+
+    html.theme-dark .tag {
+        color: #d8dde8;
+        border-color: #5c6575;
+        background-color: rgba(255, 255, 255, 0.06);
+    }
+
+    html.theme-dark .talk {
+        border-left-color: #4a5260;
+    }
+
+    html.theme-dark .sideimg {
+        border-color: #4a5260;
+    }
+
+    .section-anchor {
+        scroll-margin-top: 52px;
+    }
+
     .menulink.source-link {
         display: inline-block;
         font-size: 0.7rem;
         margin: 16px 0 8px;
+        max-width: 100%;
     }
 
     
@@ -595,6 +802,22 @@
     }
     }
 
+    @media only screen and (max-width: 575.98px) {
+    #affiliations + .row {
+        padding-bottom: 0.75rem;
+    }
+
+    #affiliations + .row .mx-auto {
+        flex: 0 0 auto;
+        width: 50%;
+        max-width: 160px;
+    }
+
+    .instilogo {
+        height: 44px;
+    }
+    }
+
     @media only screen and (max-width: 900px) {
     .allstuff {
         padding-top:0px !important;
@@ -626,6 +849,10 @@
         /* border-radius: 10px; */
     }
 
+    html.theme-dark .paper {
+        border-left-color: #4a5260;
+    }
+
     .about {
         text-align: left !important;
         font-size: 0.98rem;
@@ -653,6 +880,30 @@
         padding: 7px 9px;
     }
 
+    .section-nav {
+        gap: 8px 10px;
+        padding: 8px 10px;
+    }
+
+    .section-nav-links {
+        gap: 4px 10px;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .section-nav-link {
+        font-size: 0.88rem;
+    }
+
+    .theme-toggle {
+        padding: 6px 9px;
+        font-size: 0.88rem;
+    }
+
+    .section-anchor {
+        scroll-margin-top: 48px;
+    }
+
     a[style*="position: fixed; bottom: 0;"] {
         position: static !important;
         display: block;
@@ -667,6 +918,32 @@
       if (window.matchMedia('(max-width: 767px)').matches) {
             $(".sideimg").remove();
         }
+      (function () {
+            var root = document.documentElement;
+            var btn = document.getElementById('theme-toggle');
+            var icon = btn ? btn.querySelector('.theme-toggle-icon') : null;
+            var metaTheme = document.getElementById('theme-color-meta');
+            if (!btn || !icon) return;
+            function applyIcon() {
+                var dark = root.classList.contains('theme-dark');
+                icon.className = dark ? 'fas fa-sun theme-toggle-icon' : 'fas fa-moon theme-toggle-icon';
+                btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+                btn.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
+                btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+                if (metaTheme) {
+                    metaTheme.setAttribute('content', dark ? '#1a1d23' : '#fbfbfb');
+                }
+            }
+            applyIcon();
+            btn.addEventListener('click', function () {
+                root.classList.toggle('theme-dark');
+                try {
+                    localStorage.setItem('theme', root.classList.contains('theme-dark') ? 'dark' : 'light');
+                } catch (e) {}
+                applyIcon();
+            });
+      })();
+
       $(function () {
             $.each(document.images, function () {
                 var this_image = this;
