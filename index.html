@@ -446,18 +446,33 @@
         font-weight: 400;
     } */
     .institution {
-        font-size: 12px;
+        font-size: 14px;
         color: #444;
+        margin-top: 6px;
     }
     .years {
-        font-size: 11px;
+        font-size: 13px;
         color: #888;
+        margin-top: 2px;
     }
 
     .instilogo {
-        height: 50px;
+        height: 72px;
+        max-width: 100%;
+        object-fit: contain;
         /* filter: grayscale(20%); */
         /* opacity: 0.9; */
+    }
+
+    #affiliations + .row {
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        row-gap: 1rem;
+    }
+
+    #affiliations + .row > .mx-auto {
+        padding-left: 14px;
+        padding-right: 14px;
     }
 
     a {
@@ -804,17 +819,31 @@
 
     @media only screen and (max-width: 575.98px) {
     #affiliations + .row {
-        padding-bottom: 0.75rem;
+        padding-bottom: 1.25rem;
+        row-gap: 1rem;
     }
 
     #affiliations + .row .mx-auto {
         flex: 0 0 auto;
         width: 50%;
-        max-width: 160px;
+        max-width: 180px;
     }
 
-    .instilogo {
-        height: 44px;
+    #affiliations + .row > .mx-auto {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #affiliations + .row .instilogo {
+        height: 58px;
+    }
+
+    #affiliations + .row .institution {
+        font-size: 13px;
+    }
+
+    #affiliations + .row .years {
+        font-size: 12px;
     }
     }
 
