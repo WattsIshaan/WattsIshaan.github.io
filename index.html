@@ -120,12 +120,12 @@
 					<div class="header-1 pt-5 section-anchor" id="about">About</div>
 					Hello! My name is Ishaan Watts, and I am a first-year graduate student in the Machine Learning Department at <a class="in-text" href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University</a>.
 					I am interested in the science of foundation models and understanding their failure modes.
-					Currently, I am working with <a class="in-text" href="https://www.cs.cmu.edu/~aditirag/" target="_blank">Prof. Aditi Raghunathan</a> on studying how pretraining choices influence downstream performance [<span class="conf-bio">ICML'26</span>][<i>Spotlight Talk</i> @ ICBINB Workshop, <span class="conf-bio">ICLR'26</span>].
+					Currently, I am working with <a class="in-text" href="https://www.cs.cmu.edu/~aditirag/" target="_blank">Prof. Aditi Raghunathan</a> on studying how pretraining choices influence downstream performance [<a href="#pub-sharpness-pretraining" class="conf-bio pub-ref-link">ICML'26</a>][<i>Spotlight Talk</i> @ ICBINB Workshop, <a href="#pub-sharpness-pretraining" class="conf-bio pub-ref-link">ICLR'26</a>].
 					<br>
 					<br>
 					In a past role, I was a Pre-Doctoral Researcher at <a class="in-text" href="https://deepmind.google" target="_blank">Google DeepMind</a> under the guidance of <a class="in-text" href="https://parthatalukdar.github.io" target="_blank">Dr. Partha Talukdar</a>.
 					I was part of the Modular Large-Scale Continual Learning group, where I worked on model composition.
-					I also worked as a Research Intern at <a class="in-text" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank">Microsoft Research</a> under <a class="in-text" href="https://www.microsoft.com/en-us/research/people/susitara/" target="_blank">Dr. Sunayana Sitaram</a>, where we studied linguistic diversity in India and worked toward fair and inclusive evaluation of language models [<span class="conf-bio">NAACL'24, ACL'24, EMNLP'24, AAAI'25</span>]. I completed my bachelor's degree at <a class="in-text" href="https://home.iitd.ac.in" target="_blank">IIT Delhi</a>.
+					I also worked as a Research Intern at <a class="in-text" href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank">Microsoft Research</a> under <a class="in-text" href="https://www.microsoft.com/en-us/research/people/susitara/" target="_blank">Dr. Sunayana Sitaram</a>, where we studied linguistic diversity in India and worked toward fair and inclusive evaluation of language models [<a href="#pub-megaverse" class="conf-bio pub-ref-link">NAACL'24</a>, <a href="#pub-maple" class="conf-bio pub-ref-link">ACL'24</a>, <a href="#pub-pariksha" class="conf-bio pub-ref-link">EMNLP'24</a>, <a href="#pub-rtplx" class="conf-bio pub-ref-link">AAAI'25</a>]. I completed my bachelor's degree at <a class="in-text" href="https://home.iitd.ac.in" target="_blank">IIT Delhi</a>.
 					<br>
 					<br>
 					Outside of research, I'm a fitness enthusiast and enjoy going to the gym and training for triathlons. I recently completed my <a class="in-text" href="images/pgh-marathon-2026.png" target="_blank">first marathon</a>!
@@ -164,7 +164,7 @@
 					<!-- PUBLICATIONS SECTION -->
 					<div class="header-1 pt-5 section-anchor" id="publications">Publications</div>
 					<p class="text-left mb-2 pub-legend">C=Conference, P=Preprint, <sup>*</sup>=Equal Contribution</p>
-					<div class="row sharpness2026">
+					<div class="row sharpness2026 section-anchor" id="pub-sharpness-pretraining">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/ICLR2026%20Poster%20ICBINB%20-%20Ishaan%20Watts.png">
 						</div>
@@ -189,7 +189,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="row gemini-2.5pro">
+					<div class="row gemini-2.5pro section-anchor" id="pub-gemini-25">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/gemini_logo2.png">
 						</div>
@@ -209,7 +209,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="row rtplx2024">
+					<div class="row rtplx2024 section-anchor" id="pub-rtplx">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/rtplx_poster.png">
 						</div>
@@ -233,7 +233,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="row pariksha2024">
+					<div class="row pariksha2024 section-anchor" id="pub-pariksha">
 						<div class="col-md-2 my-auto" style="max-width: 160px;">
 							<img class="sideimg" lsrc="images/sides/pariksha_poster.png">
 						</div>
@@ -258,7 +258,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="row maple2024">
+					<div class="row maple2024 section-anchor" id="pub-maple">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/maple_poster.png">
 						</div>
@@ -281,7 +281,7 @@
 						</div>
 					</div>
 					<br>
-					<div class="row megaverse2023">
+					<div class="row megaverse2023 section-anchor" id="pub-megaverse">
 						<div class="col-md-2 my-auto">
 							<img class="sideimg" lsrc="images/sides/megaverse_poster.png">
 						</div>
@@ -703,6 +703,15 @@
         color: #e8a0a0;
     }
 
+    html.theme-dark a.pub-ref-link.conf-bio {
+        color: #e8a0a0;
+    }
+
+    html.theme-dark a.pub-ref-link.conf-bio:hover {
+        color: #f5bebe;
+        text-decoration: underline;
+    }
+
     html.theme-dark .news-scroll {
         background-color: #23272f;
         border-color: #3d4450;
@@ -842,6 +851,17 @@
 
     .conf-bio {
         color: #c96a6a;
+    }
+
+    a.pub-ref-link.conf-bio {
+        color: #c96a6a;
+        text-decoration: none;
+        font-weight: inherit;
+    }
+
+    a.pub-ref-link.conf-bio:hover {
+        text-decoration: underline;
+        color: #a85555;
     }
 
     .profilepic {
